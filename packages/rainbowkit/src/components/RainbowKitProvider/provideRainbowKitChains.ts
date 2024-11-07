@@ -243,7 +243,7 @@ export const provideRainbowKitChains = <Chain extends RainbowKitChain>(
     const defaultMetadata = chainMetadataById[chain.id] ?? {};
     return {
       ...chain,
-      name: defaultMetadata.name ?? chain.name, // favor colloquial names
+      // name: defaultMetadata.name ?? chain.name, // favor colloquial names
       iconUrl: chain.iconUrl ?? defaultMetadata.iconUrl,
       iconBackground: chain.iconBackground ?? defaultMetadata.iconBackground,
     } as Chain;
